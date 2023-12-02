@@ -50,6 +50,7 @@ ol {
   display: flex;
   margin-top: 16px;
   gap: 40px;
+  width: 711px;
 }
 
 .title {
@@ -135,6 +136,16 @@ ol {
   align-self: end;
 }
 
+.button:active {
+  border: 1px solid #FFF;
+  background: #545050;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .more-button {
   width: 100%;
 }
@@ -164,11 +175,7 @@ ol {
 }
 
 .search-form__textfield:focus {
-  outline: none;
-}
-
-.search-form__textfield:focus .search-form__label {
-  border: 1px solid red;
+  border: 1px solid white;
 }
 
 
@@ -192,7 +199,8 @@ ol {
 
 .search-form__textfield {
   background: none;
-  border: none;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   color: rgba(255, 255, 255, 0.70);
@@ -202,6 +210,7 @@ ol {
   font-weight: 400;
   line-height: normal;
   min-width: 225px;
+  outline: none;
 }
 
 .search-form__textfield:hover {
@@ -218,7 +227,7 @@ ol {
 }
 
 .content__video-card-description-container {
-  flex-basis: 200px;
+  min-width: 200px;
 }
 
 .content__video-card-title {
@@ -247,5 +256,18 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
+  padding: 2px;
+  width: 394px;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  cursor: pointer;
+}
+
+.content__card-link:active {
+  background: #545050;
 }
