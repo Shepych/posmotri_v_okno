@@ -1,1 +1,1 @@
-https://github.com/Shepych/ono-tebe-nado.git
+https://github.com/Shepych/ono-tebe-nado
