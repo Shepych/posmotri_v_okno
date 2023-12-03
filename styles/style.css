@@ -85,6 +85,7 @@ ol {
   position: relative;
   object-fit: cover;
   object-position: center;
+  height: 100%;
 }
 
 .content__list {
@@ -92,7 +93,6 @@ ol {
   width: 399px;
   height: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -302,8 +302,17 @@ ol {
 
 .content__card-link:active {
   background: #545050;
+  border: 1px solid transparent;
 }
 
 .content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
   border: 1px solid white;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
